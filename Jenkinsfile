@@ -1,4 +1,5 @@
 def gv
+
 pipeline {
     agent any
     parameters {
@@ -32,7 +33,7 @@ pipeline {
         }
             steps {
                 script{
-                    gv.testApp
+                    gv.testApp()
                 }
             }
         }
